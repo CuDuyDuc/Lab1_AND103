@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    android:background="@color/white"
+    tools:context=".HomePageScreen">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="38dp"
+        android:gravity="center"
+        android:layout_marginBottom="15dp"
+        android:textColor="@color/dark_blue"
+        android:textStyle="bold"
+        android:layout_marginTop="35dp"
+        android:text="Chào Mừng Bạn Đến Bước Cuối Cùng" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:layout_height="425dp"
+        android:src="@drawable/homepagegif" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="17dp"
+        android:gravity="start"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="15dp"
+        android:textColor="@color/dark_blue"
+        android:textStyle="bold"
+        android:text="Bây giờ hãy bấm vào đăng xuất để hoàn thành nhiệm vụ lab1. Goodluck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Đăng Xuất"
+        android:background="@drawable/resource_background_button"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:drawableLeft="@drawable/baseline_logout"
+        android:padding="10dp"
+        android:textAllCaps="false"
+        android:textSize="20sp" />
+</LinearLayout>

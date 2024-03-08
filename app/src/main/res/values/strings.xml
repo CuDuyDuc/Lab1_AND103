@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Lab1_AND103</string>
+    <string name="quen_matkhau">Quên mật khẩu?</string>
+    <string name="dang_ky">Đăng Ký</string>
+    <string name="dang_nhap">Đăng Nhập</string>
+</resources>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingEnd="20dp"
+    android:paddingStart="20dp"
+    tools:context=".SignInPhoneScreen">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="265dp"
+        app:srcCompat="@drawable/login" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="17dp"
+        android:gravity="start"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/dark_blue"
+        android:textStyle="bold"
+        android:text="Bây giờ, bạn hãy nhập số điện thoại của mình để lấy mã OTP đăng nhập: " />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxStrokeColor="#FE8B00"
+        app:endIconTint="#FE8B00"
+        app:hintTextColor="#FE8B00"
+        app:passwordToggleTint="#FE8B00"
+        android:layout_marginTop="20dp"
+        app:startIconDrawable="@drawable/baseline_phone"
+        app:startIconTint="#FE8B00">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Số Điện Thoại"
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnGetOTP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Get OTP"
+        android:background="@drawable/resource_background_button"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="17dp"
+        android:gravity="start"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="25dp"
+        android:textColor="@color/dark_blue"
+        android:textStyle="bold"
+        android:text="Hãy nhập vào OTP bạn vừa nhận được từ SMS:"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxStrokeColor="#FF9228"
+        app:endIconTint="#FF9228"
+        app:hintTextColor="#FF9228"
+        app:passwordToggleTint="#FF9228"
+        app:startIconDrawable="@drawable/baseline_lock"
+        app:startIconTint="#FF9228">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtOTP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="OTP"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLoginWithOTP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Đăng Nhập"
+        android:background="@drawable/resource_background_button"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:textSize="20sp" />
+
+</LinearLayout>
